@@ -1,0 +1,120 @@
+
+#element::-webkit-scrollbar { 
+    display: none; 
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+details > summary {
+    list-style: none;
+}
+details > summary::marker {
+    display: none;
+}
+body{
+    margin: 0;
+    background-color: #121113;
+    color:#E4E6C3;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #222725;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.ico-left{
+    margin-left: 15px;
+    width: 24px;
+}
+.ico-right{
+    margin-right: 15px;
+    width: 24px;
+}
+.list-fucul{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #222725;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-bottom: 5px;
+}
+.facul{
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius:25px;
+    background-color: #899878;
+    margin-left: 10px;
+}
+.post{
+    background-color: #222725;
+    margin-bottom: 5px;
+}
+.post-heaser{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+.futer-post-like-date{
+    display: flex;
+    border-top: 1px solid #2a312e;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+.info-Text-Post{
+    margin: 10px 15px 10px 15px;
+    font-size: 14px;
+}
+.name-post{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.futer-post{
+    width: 100%;
+}
+.name-ico-fuck-post{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+.like-post{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+.date-post{
+    margin-right: 15px;
+}
+.ava-fack-post{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.photo-Post{
+    width: 100%;
+}
+.like{
+    width: 25px;
+}
+.none{
+    display: none;
+}
+.date-post{
+    font-size: 14px;
+}
+.help-post{
+    font-size: 12px;
+    color: #899878;
+}
