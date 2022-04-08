@@ -163,3 +163,72 @@ a{
 .ico-left-LP{
     margin-right: 15px;
 }
+.suport-input{
+    width: 100%;
+    height: 50px;
+    background-color: #343A40;
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-messege-sprt{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.btn-attech-sprt{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn-attech-ico{
+    height: 35px;
+}
+.btn-messege-ico{
+    height: 35px;
+}
+.input-sptr{
+    width: 100%;
+}
+.input-sptr-style{
+    width: 90%;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #495057;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    color: #E9ECEF;
+    background-color: #343A40;
+    outline: 0;
+}
+.page-suport{
+    height: 100%;
+}
+.suport-messege-list{
+    position: fixed;
+    bottom: 50px;
+    top: 50px;
+    z-index: -1;
+    width: 100%
+}
+.view-messege{
+    background-color: #343A40;
+    padding: 10px 10px 20px 10px;
+    margin-left: 10px;
+    max-width: 50%;
+    border-radius: 20px;
+    min-width: 30px;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+}
+.time-massege{
+    float: right;
+    font-size: 12px;
+    color: #6C757D;
+}
+.blok-list-messege{
+    height: 100%;
+    overflow: auto;
+}

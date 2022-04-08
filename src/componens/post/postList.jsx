@@ -1,6 +1,7 @@
 import {useState} from "react"
 import Post from "./post";
 import { getDatabase, onValue, ref } from "firebase/database";
+
 let listPost2 = []
 let i = []
 function PostList() {

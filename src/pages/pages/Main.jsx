@@ -15,7 +15,7 @@ function Main() {
         IcoMenuOpen: menuIcoOpen,
         home: '/',
         like: 'like/',
-        suport: '/',
+        suport: 'suport',
         settings:'/'
     }
   return (
