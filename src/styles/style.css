@@ -123,4 +123,43 @@ body{
     height: 100vh;
     background-color: #343A40;
     position: fixed;
+    z-index: 5;
+}
+a{
+    text-decoration: none;
+}
+.oveh{
+    overflow: hidden;
+}
+.opas{
+    opacity: 0.5;
+}
+.link-list-LP{
+    border-top:1px solid #495057;
+    padding: 10px 0px 10px 0px;
+    color: #E9ECEF;
+    margin-top: -5px;
+    border-bottom: 1px solid #495057;
+}
+.item-link-list{
+    display: flex;
+    align-items: center;
+    color: #E9ECEF;
+}
+.item-link{
+    padding: 10px 0px 10px 15px;
+}
+.item-link:hover{
+    background-color: #495057;
+    align-items: center;
+}
+.ico-LP{
+    margin-right: 10px;
+}
+.name-Pagese-LP{
+    margin-left: 15px;
+    font-size: 18px;
+}
+.ico-left-LP{
+    margin-right: 15px;
 }

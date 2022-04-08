@@ -58,7 +58,7 @@ function Post(post) {
     <div className="post">
         <div className="post-heaser">
             <div className="name-ico-fuck-post">
-                <img className="ava-fack-post" src={post.post.avaFuk} alt="" />
+                <img className="ava-fack-post" src={post.post.photoFuck} alt="" />
                 <div className="name-fuck-post">{post.post.nameFuck}</div>
             </div>
         </div>

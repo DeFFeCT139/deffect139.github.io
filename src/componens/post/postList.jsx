@@ -1,7 +1,5 @@
 import {useState} from "react"
 import Post from "./post";
-import avaFuck from '../../img/ava.jpg'
-import photo from '../../img/b469ec9ca0ddb38a05a113885e78ebdb.jpg'
 import { getDatabase, onValue, ref } from "firebase/database";
 let listPost2 = []
 let i = []

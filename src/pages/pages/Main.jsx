@@ -1,5 +1,3 @@
-import react from "react"
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Header from "../../componens/header/header";
 import messegeIco from '../../img/question_answer_black_24dp.svg'
 import menuIco from '../../img/menu_black_24dp.svg'
@@ -15,13 +13,19 @@ function Main() {
         IcoMassege: messegeIco,
         IcoMenu: menuIco,
         IcoMenuOpen: menuIcoOpen,
+        home: '/',
+        like: 'like/',
+        suport: '/',
+        settings:'/'
     }
   return (
     <div>
         <LeftPanel nameP = {mainInfo}/>
-        <Header nameP = {mainInfo}/>
-        <ListFuck/>
-        <PostList/>
+        <div id="body2" className="body-mai">
+          <Header nameP = {mainInfo}/>
+          <ListFuck/>
+          <PostList/>
+        </div>
     </div>
   );
 }

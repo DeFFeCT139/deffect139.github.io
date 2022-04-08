@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage";
 
 //подключаю fribase rtbd 
 const firebaseConfig = {
@@ -15,6 +16,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
 
 ReactDOM.render(
     <App/>,
