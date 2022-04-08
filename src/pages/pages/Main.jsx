@@ -9,6 +9,7 @@ import PostList from "../../componens/post/postList";
 import LeftPanel from "../../componens/LeftPanel/leftPanel";
 
 function Main() {
+    //параметры страницы 
     let mainInfo = {
         NamePages: 'Главная',
         IcoMassege: messegeIco,
