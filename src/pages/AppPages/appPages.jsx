@@ -1,5 +1,6 @@
 import react from "react"
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import CreatePost from "../pages/createPost";
 import Like from "../pages/like";
 import Main from "../pages/Main";
 import Messege from "../pages/Massege";
@@ -12,6 +13,7 @@ function AppPages() {
             <Route exact path='/messege' element={<Messege/>} />
             <Route exact path='/like' element={<Like/>} />
             <Route exact path='/suport' element={<Suport/>} />
+            <Route exact path='/cretepost' element={<CreatePost/>} />
         </Routes>
   );
 }

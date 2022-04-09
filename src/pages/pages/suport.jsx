@@ -18,7 +18,8 @@ function Suport() {
         home: '/',
         like: '/like',
         suport: '',
-        settings:'/'
+        settings:'/',
+        createPost:'/cretepost'
     }
   return (
     <div className="page-suport">

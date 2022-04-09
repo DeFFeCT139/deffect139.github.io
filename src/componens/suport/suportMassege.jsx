@@ -5,6 +5,10 @@ let listPost2 = []
 let i = []
 
 function SuportMassege() {
+    setTimeout(() => {
+        var block = document.getElementById("messegeList");
+        block.scrollTop = 9999999999;
+    }, 10)
     const[listPost, setPost] = useState(listPost2)  
     const database = getDatabase()
     onValue(ref(database, 'messege'), (snapshot) => {
@@ -14,10 +18,10 @@ function SuportMassege() {
         setPost( listPost2 )
         i = listPost2
     }
-    }); 
+    });
     return (
         <div className="suport-messege-list">
-            <div className="blok-list-messege">
+            <div id="messegeList" className="blok-list-messege">
                 {listPost.map(post =>
                     <ViewMessege post={post} key={post.id}/>
                 )}

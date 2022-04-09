@@ -32,6 +32,7 @@ function LeftPanel(nameP) {
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.suport}><img className="ico-LP" src={suport} alt="" />Тех. Поддержка</Link></div>
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.settings}><img className="ico-LP" src={settings} alt="" />Настройки</Link></div>
       </div>
+      <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.createPost}><img className="ico-LP" src={settings} alt="" />Генерация поста</Link></div>
     </div>
   );
 }

@@ -2,6 +2,14 @@
 #element::-webkit-scrollbar { 
     display: none; 
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -217,10 +225,11 @@ a{
     background-color: #343A40;
     padding: 10px 10px 20px 10px;
     margin-left: 10px;
-    max-width: 50%;
-    border-radius: 20px;
+    max-width: 200px;
+    border-radius: 15px;
     min-width: 30px;
     margin-bottom: 5px;
+    margin-top: 5px;
     overflow-wrap: break-word;
 }
 .time-massege{
@@ -231,4 +240,53 @@ a{
 .blok-list-messege{
     height: 100%;
     overflow: auto;
+}
+.form-post{
+    text-align: center;
+    background-color: #343A40;
+    padding: 10px 15px 10px 15px;
+}
+.block-input-FP{
+    width: 100%;
+    text-align: center;
+}
+.input-FP{
+    font-size: 16px;
+    color: #E9ECEF;
+    border: 1px solid #495057;
+    background-color: #343A40;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 10px 0px 10px 0px;
+    outline: none;
+}
+.textarea-FP{
+    max-height: 200px;
+    min-height: 200px;
+    overflow: auto;
+}
+.btn-FP{
+    font-size: 16px;
+    color: #E9ECEF;
+    border: 1px solid #495057;
+    background-color: #495057;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    width: 96%;
+    margin: 10px 0px 10px 0px;
+}
+.slt-FP{
+    font-size: 16px;
+    color: #E9ECEF;
+    border: 1px solid #495057;
+    background-color: #495057;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    width: 96%;
+    margin: 10px 0px 10px 0px;
+    outline: none;
+    text-align: center;
 }

@@ -18,6 +18,10 @@ function SuportInput() {
                     time: time,
                 });
             })
+            setTimeout(() => {
+                var block = document.getElementById("messegeList");
+                block.scrollTop = block.scrollHeight;
+            }, 100)
         }
     }
     return (

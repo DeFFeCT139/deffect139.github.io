@@ -16,7 +16,8 @@ function Main() {
         home: '/',
         like: 'like/',
         suport: 'suport',
-        settings:'/'
+        settings:'/',
+        createPost:'/cretepost'
     }
   return (
     <div>
