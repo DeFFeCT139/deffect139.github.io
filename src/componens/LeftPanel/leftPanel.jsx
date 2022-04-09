@@ -3,6 +3,7 @@ import home from '../../img/other_houses_black_24dp.svg'
 import like from '../../img/favorite_border_black_24dp.svg'
 import suport from '../../img/live_help_black_24dp.svg'
 import settings from '../../img/settings_black_24dp.svg'
+import addPost from '../../img/post_add_black_24dp.svg'
 
 
 function LeftPanel(nameP) {
@@ -31,8 +32,8 @@ function LeftPanel(nameP) {
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.like}><img className="ico-LP" src={like} alt="" />Понравившиеся</Link></div>
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.suport}><img className="ico-LP" src={suport} alt="" />Тех. Поддержка</Link></div>
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.settings}><img className="ico-LP" src={settings} alt="" />Настройки</Link></div>
+        <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.createPost}><img className="ico-LP" src={addPost} alt="" />Добавление поста</Link></div>
       </div>
-      <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.createPost}><img className="ico-LP" src={settings} alt="" />Генерация поста</Link></div>
     </div>
   );
 }

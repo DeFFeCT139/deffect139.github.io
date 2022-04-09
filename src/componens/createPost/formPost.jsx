@@ -9,10 +9,16 @@ function FormPost() {
         let textPost = document.getElementById('textPost').value;
         let photoPost = document.getElementById('photoPost').value;
         let photoFuck = 0
+        document.getElementById('temPost').value = '';
+        document.getElementById('textPost').value  = '';
+        document.getElementById('photoPost').value  = '';
+
         const db = getDatabase();
         get(ref(db, 'fukul/' + selectFP + '/photoFuck')).then((snapshot) => {
             photoFuck = snapshot.val();
         })
+
+
         if (selectFP !== 'Выбирите факультет' &&  temPost.length !== 0 && textPost.length !== 0){
             get(ref(db, `post`)).then((snapshot) => {
                 let MasMessege = snapshot.val();

@@ -10,13 +10,13 @@ import FormPost from "../../componens/createPost/formPost";
 function CreatePost() {
     //параметры страницы 
     let mainInfo = {
-        NamePages: 'Генерация Поста',
+        NamePages: 'Добавление поста',
         IcoMassege: messegeIco,
         IcoMenu: menuIco,
         IcoMenuOpen: menuIcoOpen,
         home: '/',
-        like: 'like/',
-        suport: 'suport/',
+        like: '/like/',
+        suport: '/suport/',
         settings:'/',
         createPost:'/cretepost'
     }
