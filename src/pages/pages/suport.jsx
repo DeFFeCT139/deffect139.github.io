@@ -19,8 +19,9 @@ function Suport() {
         like: '/like',
         suport: '',
         settings:'/',
-        createPost:'/cretepost'
-    }
+        createPost:'/cretepost',
+        addfuck:'/addfuck/'
+      }
   return (
     <div className="page-suport">
         <LeftPanel nameP = {mainInfo}/>

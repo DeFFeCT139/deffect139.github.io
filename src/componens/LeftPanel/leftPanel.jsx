@@ -4,9 +4,12 @@ import like from '../../img/favorite_border_black_24dp.svg'
 import suport from '../../img/live_help_black_24dp.svg'
 import settings from '../../img/settings_black_24dp.svg'
 import addPost from '../../img/post_add_black_24dp.svg'
+import add from '../../img/add_black_24dp.svg'
+import ListFuck from "./listFucK";
 
 
 function LeftPanel(nameP) {
+
     function leftPanelBtn() {
         var nam = document.querySelector('#leftPanel');
         nam.className = 'left-panel none';
@@ -33,6 +36,10 @@ function LeftPanel(nameP) {
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.suport}><img className="ico-LP" src={suport} alt="" />Тех. Поддержка</Link></div>
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.settings}><img className="ico-LP" src={settings} alt="" />Настройки</Link></div>
         <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.createPost}><img className="ico-LP" src={addPost} alt="" />Добавление поста</Link></div>
+      </div>
+      <div className="LP-LFK">
+        <div onClick={leftPanelBtn3} className="item-link"><Link className="item-link-list" to={nameP.nameP.addfuck}><img className="ico-LP" src={add} alt="" />Добавление факультета</Link></div>
+        <ListFuck/>
       </div>
     </div>
   );

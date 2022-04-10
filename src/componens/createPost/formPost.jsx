@@ -1,7 +1,19 @@
-import { get, getDatabase, ref, set } from "firebase/database";
+import { get, getDatabase, onValue, ref, set } from "firebase/database";
+import {useState} from "react"
 
-
+let listPost2 = []
+let i = []
 function FormPost() {
+    const[listPost, setPost] = useState(listPost2)  
+    const database = getDatabase()
+    onValue(ref(database, 'fukul'), (snapshot) => {
+      listPost2 = Object.values(snapshot.val())
+      if (listPost2.length == i.length){
+      } else {
+          setPost( listPost2 )
+          i = listPost2
+      }
+    });
     function createPost() {
         let date = String(new Date())
         let selectFP = document.getElementById('select-FP').value;
@@ -18,32 +30,34 @@ function FormPost() {
             photoFuck = snapshot.val();
         })
 
-
-        if (selectFP !== 'Выбирите факультет' &&  temPost.length !== 0 && textPost.length !== 0){
-            get(ref(db, `post`)).then((snapshot) => {
-                let MasMessege = snapshot.val();
-                let KallMessege = MasMessege.length
-                set(ref(db, 'post/' + String(KallMessege)), {
-                    date: date,
-                    id: 'one' + KallMessege,
-                    key: KallMessege,
-                    like: false,
-                    nameFuck: selectFP,
-                    namePost: temPost,
-                    photoFuck: photoFuck,
-                    photoPost: photoPost,
-                    textPost: textPost,
-                });
-            })
-        }
+        setTimeout(()=> {
+            if (selectFP !== 'Выбирите факультет' &&  temPost.length !== 0 && textPost.length !== 0){
+                get(ref(db, `post`)).then((snapshot) => {
+                    let MasMessege = snapshot.val();
+                    let KallMessege = MasMessege.length
+                    set(ref(db, 'post/' + String(KallMessege)), {
+                        date: date,
+                        id: 'one' + KallMessege,
+                        key: KallMessege,
+                        like: false,
+                        nameFuck: selectFP,
+                        namePost: temPost,
+                        photoFuck: photoFuck,
+                        photoPost: photoPost,
+                        textPost: textPost,
+                    });
+                })
+            }
+        }, 200)
     }
   return (
     <div className="form-post">
         <div className="selet-FP">
             <select id='select-FP' className="slt-FP">
                 <option>Выбирите факультет</option>
-                <option>II</option>
-                <option>IT</option>
+                {listPost.map(post2 =>
+                    <option key={post2.key}>{post2.nameFuck}</option>
+                )}
             </select>
         </div>
         <div className="block-input-FP">

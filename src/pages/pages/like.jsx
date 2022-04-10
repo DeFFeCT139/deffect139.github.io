@@ -17,8 +17,9 @@ function Like() {
         like: '',
         suport: '/suport',
         settings:'/',
-        createPost:'/cretepost'
-    }
+        createPost:'/cretepost',
+        addfuck:'/addfuck/'
+      }
   return (
     <div>
         <LeftPanel nameP = {mainInfo}/>

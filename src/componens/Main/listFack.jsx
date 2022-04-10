@@ -1,22 +1,25 @@
 import Facul from "./facul";
+import {useState} from "react"
+import { getDatabase, onValue, ref } from "firebase/database";
+
+let listPost2 = []
+let i = []
 
 function ListFuck() {
-    let listFacul = [
-        {id:"1"},
-        {id:"2"},
-        {id:"3"},
-        {id:"4"},
-        {id:"5"},
-        {id:"6"},
-        {id:"7"},
-        {id:"8"},
-        {id:"9"},
-        {id:"10"},
-    ]
+      const[listPost, setPost] = useState(listPost2)  
+      const database = getDatabase()
+      onValue(ref(database, 'filter'), (snapshot) => {
+        listPost2 = snapshot.val()
+        if (listPost2.length == i.length){
+        } else {
+            setPost( listPost2 )
+            i = listPost2
+        }
+      });
   return (
     <div className="list-fucul">
-        {listFacul.map(list =>
-            <Facul key={list.id}/>
+        {listPost.map(post =>
+            <Facul key={post.key} post={post}/>
         )}
     </div>
   );

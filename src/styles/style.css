@@ -56,7 +56,7 @@ body{
     min-width: 50px;
     width: 50px;
     height: 50px;
-    border-radius:25px;
+    border-radius:30px;
     background-color: #6C757D;
     margin-left: 10px;
 }
@@ -289,4 +289,22 @@ a{
     margin: 10px 0px 10px 0px;
     outline: none;
     text-align: center;
+}
+.border-facul{
+    border: 2px solid #E9ECEF;
+}
+.photo-Fuck{
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+}
+.block-fuck{
+    width: 100%;
+    height: 45vh;
+    bottom: 10px;
+    top:10px;
+    overflow: auto;
+}
+.LP-LFK{
+    margin-top: 5px;
 }
