@@ -5,7 +5,7 @@ import { getDatabase, onValue, ref } from "firebase/database";
 let listPost2 = []
 let i = []
 
-function ListFuck() {
+function ListFuck({ setProp }) {
       const[listPost, setPost] = useState(listPost2)  
       const database = getDatabase()
       onValue(ref(database, 'filter'), (snapshot) => {
@@ -16,10 +16,19 @@ function ListFuck() {
             i = listPost2
         }
       });
+      let state = {
+        one: true,
+        two: false,
+        free:false,
+      }
+      const [mainProp2, setMainProp] = useState(state);
+      setTimeout(()=> {
+      setProp(mainProp2)
+      }, 100)
   return (
     <div className="list-fucul">
         {listPost.map(post =>
-            <Facul key={post.key} post={post}/>
+            <Facul setFack={setMainProp} key={post.key} post={post}/>
         )}
     </div>
   );
