@@ -1,5 +1,5 @@
 import Facul from "./facul";
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import { getDatabase, onValue, ref } from "firebase/database";
 
 let listPost2 = []

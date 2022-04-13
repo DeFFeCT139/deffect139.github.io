@@ -17,7 +17,7 @@ function Header(nameP) {
         </div>
         <div>{nameP.nameP.NamePages}</div>
         <div className="ico-right">
-          <Link to={'messege'}><img src={nameP.nameP.IcoMassege} alt="" /></Link>
+          <Link to={'/messege'}><img src={nameP.nameP.IcoMassege} alt="" /></Link>
         </div>
     </div>
   );

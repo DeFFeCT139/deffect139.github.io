@@ -21,6 +21,7 @@ function FormPost() {
         let textPost = document.getElementById('textPost').value;
         let photoPost = document.getElementById('photoPost').value;
         let photoFuck = 0
+        let sub = 0
         document.getElementById('temPost').value = '';
         document.getElementById('textPost').value  = '';
         document.getElementById('photoPost').value  = '';
@@ -28,6 +29,9 @@ function FormPost() {
         const db = getDatabase();
         get(ref(db, 'fukul/' + selectFP + '/photoFuck')).then((snapshot) => {
             photoFuck = snapshot.val();
+        })
+        get(ref(db, 'fukul/' + selectFP + '/sub')).then((snapshot) => {
+            sub = snapshot.val();
         })
 
         setTimeout(()=> {
@@ -45,6 +49,7 @@ function FormPost() {
                         photoFuck: photoFuck,
                         photoPost: photoPost,
                         textPost: textPost,
+                        subscribe: sub,
                     });
                 })
             }

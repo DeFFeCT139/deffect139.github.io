@@ -17,6 +17,7 @@ function FormAddFuck() {
                     key: KallMessege,
                     nameFuck: nameFuck,
                     photoFuck: photoFuck,
+                    sub: false,
                 });
             })
         }

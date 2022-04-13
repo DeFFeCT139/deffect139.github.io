@@ -322,3 +322,42 @@ a{
 .LP-LFK{
     margin-top: 5px;
 }
+.about-fuck{
+    background-color: #343A40;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+.photo-fuck-img{
+    width: 100%;
+}
+.photo-fuck-ava{
+    width: 40px;
+    border-radius: 20px;
+}
+.info-fuck{
+    padding: 15px 15px 15px 15px;
+    border-bottom: 1px solid #495057;
+}
+.info-block-fuck{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.btn-block-fuck{
+    text-align: center;
+}
+.nameFacult{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btnFuc{
+    width: 95%;
+    padding: 10px 10px 10px 10px;
+    background-color: #495057;
+    color: #E9ECEF;
+    border-radius: 20px;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}

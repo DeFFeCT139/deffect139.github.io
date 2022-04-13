@@ -1,5 +1,6 @@
 import react from "react"
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import AboutFuck from "../../componens/AboutFuck/AboutFuck";
 import AddFuck from "../pages/addFuck";
 import CreatePost from "../pages/createPost";
 import Like from "../pages/like";
@@ -16,6 +17,7 @@ function AppPages() {
             <Route exact path='/suport' element={<Suport/>} />
             <Route exact path='/cretepost' element={<CreatePost/>} />
             <Route exact path='/addfuck' element={<AddFuck/>} />
+            <Route exact path='/faculty/:nameFuck' element={<AboutFuck/>} />
         </Routes>
   );
 }
