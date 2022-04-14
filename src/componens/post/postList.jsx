@@ -1,6 +1,7 @@
 import {useState} from "react"
 import Post from "./post";
 import { getDatabase, onValue, ref } from "firebase/database";
+import Loader from "../Loader/loader";
 
 let listPost3 = []
 let her ="IT"
@@ -36,13 +37,21 @@ function PostList({prop}) {
           i = listPost3
       }
     });
+    function loader(){
+      let loader = document.getElementById('loader-block')
+      loader.className ='none'
+    }
+    setTimeout(loader, 2000);
   return (
     <div>
-        {listPost.map(post =>
+      {listPost.map(post =>
             <Post post={post} key={post.id}/>
-        ).reverse()}
+      ).reverse()}
+      <div id="loader-block">
+        <Loader/>
+      </div>
     </div>
-  );
+)
 }
 
 export default PostList;
