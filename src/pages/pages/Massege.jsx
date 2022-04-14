@@ -4,6 +4,7 @@ import Header from "../../componens/header/header";
 import messegeIco from '../../img/menu_black_24dp.svg'
 import menuIco from '../../img/arrow_back_ios_black_24dp.svg'
 import HeaderMessege from "../../componens/header/headerMassege";
+import RightPanel from "../../componens/RightPanel/RightPanel";
 
 function Messege() {
     let mainInfo = {
@@ -13,7 +14,10 @@ function Messege() {
     }
   return (
     <div>
-        <HeaderMessege nameP = {mainInfo}/>
+        <RightPanel nameP = {mainInfo}/>
+        <div id="body2" className="body-mai">
+          <HeaderMessege nameP = {mainInfo}/>
+        </div>
     </div>
   );
 }
