@@ -1,6 +1,7 @@
 import {useState} from "react"
 import { getDatabase, onValue, ref } from "firebase/database";
 import ViewMessege from "../messege/viewMesege";
+import Loader from "../Loader/loader";
 let listPost2 = []
 let i = []
 
@@ -19,9 +20,17 @@ function SuportMassege() {
         i = listPost2
     }
     });
+    function loader(){
+        let loader = document.getElementById('loader-block')
+        loader.className ='none'
+      }
+      setTimeout(loader, 2000);
     return (
         <div className="suport-messege-list">
             <div id="messegeList" className="blok-list-messege">
+                <div id="loader-block">
+                    <Loader/>
+                </div>    
                 {listPost.map(post =>
                     <ViewMessege post={post} key={post.id}/>
                 )}
